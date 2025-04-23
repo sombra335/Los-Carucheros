@@ -1,0 +1,115 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --grey: #ccc;
+    --red: #a32135;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height for body */
+    display: flex; /* Flexbox for column layout */
+    flex-direction: column; /* Arrange content in a column */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Header / Status Bar */
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allow wrapping */
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Special Gothic", sans-serif;
+    font-size: large;
+    gap: 1rem;
+}
+
+.status img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.status ul {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap on small screens */
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.status li {
+    margin: 0;
+}
+
+.status a:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+/* Title Section */
+.Titulo_inicio {
+    color: var(--white);
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block; /* Makes the box fit the text */
+}
+
+/* Text Section */
+.Texto {
+    color: var(--white);
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.874); /* Semi-transparent black */
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    color: var(--black);
+}
+
+/* Main Content Flex */
+.main-content {
+    flex-grow: 1; /* This ensures the main content takes up remaining space */
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--black);
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 10px;
+    height: 60px;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.footer img {
+    height: 100%;
+    width: auto;
+}
+
