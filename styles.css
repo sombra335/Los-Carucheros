@@ -12,7 +12,7 @@ html, body {
     flex-direction: column;
     background: var(--black);
     color: var(--white);
-    font-family: Arial, sans-serif;
+    font-family: "Special Gothic", sans-serif;
 }
 
 .container {
@@ -22,7 +22,7 @@ html, body {
     background-color: #ffffff;
     background-size: 55px 55px;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: "Special Gothic", sans-serif;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ html, body {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    font-family: "Special Gothic Expanded One", sans-serif;
+    font-family: "Special Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
     flex-wrap: wrap;
@@ -97,6 +97,7 @@ main {
 
 .hero h2 {
     color: var(--red);
+    font-family: "Special Gothic", sans-serif;
 }
 
 .hero p {

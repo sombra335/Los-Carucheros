@@ -1,0 +1,58 @@
+.Titulo {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+
+.Subtitulo {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.Texto {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+/* Header / Status Bar */
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allow wrapping */
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Special Gothic", sans-serif;
+    font-size: large;
+    gap: 1rem;
+}
+
+.status img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.status ul {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap on small screens */
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.status li {
+    margin: 0;
+}
+
+.status a:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
