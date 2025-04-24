@@ -95,6 +95,30 @@ img {
     color: var(--black);
 }
 
+h1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: 2rem; /* Largest size */
+}
+
+h2 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem; /* Slightly smaller */
+}
+
+h3 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; /* Smaller than h2 */
+}
+
+p {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 1rem; /* Smallest size */
+}
+
 
 
 /* Main Content Flex */
