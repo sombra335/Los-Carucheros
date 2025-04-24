@@ -33,6 +33,8 @@ img {
     font-family: "Special Gothic", sans-serif;
     font-size: large;
     gap: 1rem;
+    color: black;
+    text-decoration: underline transparent;
 }
 
 .status img {
@@ -40,6 +42,8 @@ img {
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
+    color: black;
+    text-decoration: underline transparent;
 }
 
 .status ul {
@@ -48,18 +52,23 @@ img {
     justify-content: flex-start;
     gap: 1rem;
     padding: 0;
-    margin: 0;
     list-style: none;
+    color: black;
+    text-decoration: underline transparent;
 }
 
 .status li {
     margin: 0;
+    color: black;
+    text-decoration: underline transparent;
 }
 
 .status a:hover {
     color: var(--red);
     text-decoration: underline;
 }
+
+
 
 /* Title Section */
 .Titulo_inicio {
@@ -85,6 +94,8 @@ img {
     display: inline-block;
     color: var(--black);
 }
+
+
 
 /* Main Content Flex */
 .main-content {
@@ -115,4 +126,3 @@ img {
     height: 100%;
     width: auto;
 }
-
