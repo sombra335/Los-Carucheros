@@ -65,7 +65,7 @@ def add_salida():
     <div style="text-align: center; margin-top: 10px;">
         <a id="download-btn" href="gallery/{os.path.basename(gallery_images[0])}" download>
             <button
-                style="padding: 10px 20px; font-size: 1rem; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border: 2px solid rgb(0, 0, 0); border-radius: 5px; font-family: inherit; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">💾Descargar</button>
+                style="padding: 10px 20px; font-size: 1rem; cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border: 2px solid rgb(0, 0, 0); border-radius: 5px; font-family: Special Gothic; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">💾Descargar</button>
         </a>
     </div>
     <script>
