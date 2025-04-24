@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Carucheros - Contacto</title>
-    <link rel="stylesheet" href="newstyle copy.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Carucheros - Contacto</title>
+  <link rel="stylesheet" href="newstyle copy.css">
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <div id="Barra_De_Status" class="status">
-        <img src="logo.png" alt="logo">
-        <ul>
-            <li><a href="index copia.html" class="status">Inicio</a></li>
-            <li><a href="galeria.html" class="status">Galería</a></li>
-            <li><a href="acerca.html" class="status">Acerca</a></li>
-            <li><a href="noticiero.html" class="status">Noticias</a></li>
-            <li><a href="salidas.html" class="status">Salidas</a></li>
-            <li><a href="contacto.html" class="status">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="container">
-        <main>
-            <h1 class="Titulo_inicio">Contacto</h1>
-            <form action="#" method="post">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu email" required>
-                <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </main>
-    </div>
+
+  <div id="Barra_De_Status" class="status">
+    <img src="logo.png" alt="logo">
+    <ul>
+      <li><a href="index copia.html" class="status">Inicio</a></li>
+      <li><a href="galeria.html" class="status">Galería</a></li>
+      <li><a href="acerca.html" class="status">Acerca</a></li>
+      <li><a href="noticiero.html" class="status">Noticias</a></li>
+      <li><a href="salidas.html" class="status">Salidas</a></li>
+      <li><a href="contacto.html" class="status">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <main>
+      <h1 class="Titulo_inicio">Contacto</h1>
+
+      <section class="contact-section">
+        <div class="contact-intro">
+          <p class="contact-description">
+            Rellena el formulario y nos pondremos en contacto contigo lo antes posible.
+          </p>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a1ab6772-5579-4090-8036-adb9d8dfd5be" />
+          <input type="hidden" name="from_name" value="Carucheros Web" />
+
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre</label>
+              <input id="name" name="name" class="form-input" placeholder="Tu nombre" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input id="email" name="email" class="form-input" placeholder="Tu email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input id="phone" name="phone" class="form-input" placeholder="+34 600 123 456" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tu mensaje" required></textarea>
+            </div>
+          </div>
+
+          <button class="form-submit" type="submit">Enviar</button>
+        </form>
+
+        <p id="success-message" style="display:none; color:green;">¡Mensaje enviado con éxito!</p>
+      </section>
+
+    </main>
+  </div>
+
 </body>
 </html>
