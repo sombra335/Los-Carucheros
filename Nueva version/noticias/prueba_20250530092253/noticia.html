@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../noticia.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <!-- ...existing code... -->
+    </div>
+    <div id="atras">
+        <a href="../../noticiero.html" class="atras">← Volver</a>
+    </div>
+    <h3>Prueba</h3>
+    <h4><em>subtitulo</em></h4>
+    <h5>
+        <p>Vaya una mierda</p>
+        <p>No se que esta pasando</p>
+        <p>A ver si esto&nbsp;<strong>funciona</strong></p>
+    </h5>
+    <div id="Galeria">
+        <button class="gallery-nav prev" onclick="patras()">❮</button>
+        <div class="container" style="text-align: center;">
+            <img src="images/Captura de pantalla 2025-05-26 173153.png" alt="imagen" class="gallery-img"
+                id="gallery-img">
+            <div style="margin-top: 10px;">
+                <a id="download-btn" href="images/Captura de pantalla 2025-05-26 173153.png" download>
+                    <button style="padding: 10px 20px; font-size: 1.5rem;">💾Descargar</button>
+                </a>
+            </div>
+        </div>
+        <button class="gallery-nav next" onclick="plante()">❯</button>
+    </div>
+    <script>
+        const images = ['"Captura de pantalla 2025-01-03 225006.png"', '"images/Captura de pantalla 2025-05-26 173153.png"', '"images/Captura de pantalla 2025-05-25 192700.png"', '"images/Captura de pantalla 2025-05-25 191304.png"', '"images/Captura de pantalla 2025-05-25 004126.png"', '"images/Captura de pantalla 2025-05-25 002320.png"', '"images/Captura de pantalla 2025-05-25 000833.png"', '"images/Captura de pantalla 2025-05-24 200509.png"'];
+        let index = 0;
+        const imgEl = document.getElementById('gallery-img');
+        function plante() {
+            index = (index + 1) % images.length;
+            updateGallery();
+        }
+        function patras() {
+            index = (index - 1 + images.length) % images.length;
+            updateGallery();
+        }
+        function updateGallery() {
+            imgEl.src = images[index];
+            document.getElementById("download-btn").href = images[index];
+        }
+        updateGallery();
+    </script>
+    <!-- ...existing style and footer... -->
+</body>
+
+</html>
